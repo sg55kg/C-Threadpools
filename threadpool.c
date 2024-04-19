@@ -47,6 +47,7 @@ void* worker_thread_function(void* arg)
         if (task != NULL)
         {
             task->callback(task->arg);
+            task_t_complete(task);
         }
     }
 
