@@ -39,6 +39,9 @@ int main()
     task_t_continue_with(myTask, threadFunction, secData);
     printf("After calling continue with\n");
 
+    // should data passed to tasks be freed after task completion, or in main program?
+    free(myData);
+    free(secData);
     thread_pool_destroy(global_thread_pool);
     execution_context_destroy(global_context);
 
