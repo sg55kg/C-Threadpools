@@ -7,7 +7,9 @@
       "request": "launch",
       "args": [],
       "cwd": "/Users/sam/Desktop/workspace/c_tasks",
-      "program": "/Users/sam/Desktop/workspace/c_tasks/build/Debug/outDebug"
+      "program": "/Users/sam/Desktop/workspace/c_tasks/build/${fileBasenameNoExtension}",
+      "preLaunchTask": "C/C++: clang build active file",
+      "stopOnEntry": true
     }
   ]
 }
